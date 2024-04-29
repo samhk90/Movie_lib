@@ -7,7 +7,10 @@ import Movies from './components/Movies.js';
 import Cards from './components/cards.js';
 import MoviesInfo from './components/MovieInfo.js';
 import logo from './img/logo.jpg';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock, faHeart, faTv } from '@fortawesome/free-solid-svg-icons'
+import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
+import { faListUl } from '@fortawesome/free-solid-svg-icons/faListUl';
 function App() {
   return (
     <Router> {/* Wrap your entire application with Router */}
@@ -15,9 +18,10 @@ function App() {
         <div className="row main">
           <div className="col-sm-2 sidebar">
             <img src={logo} alt="Logo" />
-            <Link to="/movies"><button className="btn sbtn mt-4">Movies</button></Link>
-            <Link to="/movies"><button className="btn sbtn mt-4">Watch List</button></Link>
-            <Link to="/movies"><button className="btn sbtn mt-4">Favorites</button></Link>
+            <Link to="/movies"><button className="btn sbtn mt-4"><FontAwesomeIcon icon={faFilm} className='mx-2' />Movies</button></Link>
+            <Link to="/movies"><button className="btn sbtn mt-4"><FontAwesomeIcon icon={faTv} className='mx-2' />Series</button></Link>
+            <Link to="/movies"><button className="btn sbtn mt-4"><FontAwesomeIcon icon={faClock} className='mx-2' />Watch List</button></Link>
+            <Link to="/movies"><button className="btn sbtn mt-4"><FontAwesomeIcon icon={faHeart} className='mx-2' />Favorites</button></Link>
           </div>
           <div className="col-sm-10 p-4 ">
             <Header />     

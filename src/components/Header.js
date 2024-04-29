@@ -4,9 +4,9 @@ export default function Header() {
     <div>
           <header className='header'>
           <nav className="navbar navbar-expand-lg">
-  <div className="container-fluid">
-    <a className="navbar-brand title_text mx-2" href="\">Movie lib</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div className="container-fluid head" >
+    <a className="navbar-brand title_text mx-4"  href="\">Movie lib</a>
+    <button className="navbar-toggler " id='hbtn' type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
