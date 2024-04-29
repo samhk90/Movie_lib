@@ -12,7 +12,7 @@ export default function MovieInfo() {
           <h2>Movie Title</h2>
           <p>Description of the movie goes here.</p>
           <p>Release Date: January 1, 2022</p>
-          {/* Add more information about the movie */}
+          <h4>where you can Watch: Netflix</h4>
         </div>
       </div>
     </div>
